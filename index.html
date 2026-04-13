@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> — ILBOUDO Sibri Pendwendé Toussaint · Developpeur Web </title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300;12..96,400;12..96,500;12..96,700;12..96,800&family=Instrument+Serif:ital@0;1&family=Fira+Code:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="">
+
+<!-- LOADER -->
+<div id="loader" class="out">
+  <div class="ld-ring">
+    <svg viewBox="0 0 90 90" fill="none">
+      <circle cx="45" cy="45" r="40" stroke="url(#lgg)" stroke-width="1.5" stroke-dasharray="6 10" stroke-linecap="round"></circle>
+      <defs><linearGradient id="lgg" x1="5" y1="5" x2="85" y2="85" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#2563eb"></stop><stop offset="100%" stop-color="#10b981"></stop></linearGradient></defs>
+    </svg>
+    <div class="ld-logo"><div class="ld-logo-inner">SAR</div></div>
+  </div>
+  <div class="ld-name">ILBOUDO Sibri Pendwendé Toussaint</div>
+  <div class="ld-bar"><div class="ld-fill"></div></div>
+</div>
+
+<!-- CURSOR -->
+<div id="cur"><div id="cdot" style="left: 967px; top: 378px;"></div><div id="cring" style="left: 967px; top: 378px;"></div></div>
+
+<!-- NAV -->
+<nav id="navbar" style="height: 58px; background: rgba(4, 8, 15, 0.95);">
+  <a href="#hero" class="nl">
+    <svg class="nl-svg" viewBox="0 0 80 80" fill="none">
+      <polygon points="40,3 75,21 75,59 40,77 5,59 5,21" fill="none" stroke="url(#ng)" stroke-width="1.8"></polygon>
+      <polygon points="40,13 65,27 65,53 40,67 15,53 15,27" fill="none" stroke="url(#ng)" stroke-width="1" opacity=".3"></polygon>
+      <text x="40" y="47" text-anchor="middle" font-family="Bricolage Grotesque,sans-serif" font-weight="800" font-size="19" fill="url(#ng)" letter-spacing="-0.5" _mstHash="3">SAR</text>
+      <defs><linearGradient id="ng" x1="5" y1="3" x2="75" y2="77" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#3b82f6"></stop><stop offset="100%" stop-color="#10b981"></stop></linearGradient></defs>
+    </svg>
+    <span class="nl-text">SIMPORE <span>Abdoul Rahim</span></span>
+  </a>
+  <ul class="nlinks">
+    <li><a href="#hero" class="ac">Accueil</a></li>
+    <li><a href="#about" class="">A propos</a></li>
+    <li><a href="#skills" class="">Skills</a></li>
+    <li><a href="#skills" class="">Attestations</a></li>
+    <li><a href="#experience" class="">Experience</a></li>
+    <li><a href="#tools" class="">Outils</a></li>
+    <li><a href="#projects" class="">Projets</a></li>
+    <li><a href="#services" class="">Services</a></li>
+    <li><a href="#testimonials" class="">Avis</a></li>
+    <li><a href="#contact" class="">Contact</a></li>
+  </ul>
+  <a href="Abdoul_Rahim_SIMPORE_CV2026.pdf" download="" class="ncv">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+    Telecharger CV
+  </a>
+  <button class="hamburger" id="hamburger" aria-label="Menu" _mstaria-label="45591">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- MOBILE NAV -->
+<div class="mobile-nav" id="mobileNav">
+  <ul>
+    <li><a href="#hero" onclick="closeMobileNav()">Accueil</a></li>
+    <li><a href="#about" onclick="closeMobileNav()">A propos</a></li>
+    <li><a href="#skills" onclick="closeMobileNav()">Skills</a></li>
+    <li><a href="#skills" onclick="closeMobileNav()">Attestations</a></li>
+    <li><a href="#experience" onclick="closeMobileNav()">Experience</a></li>
+    <li><a href="#tools" onclick="closeMobileNav()">Outils</a></li>
+    <li><a href="#projects" onclick="closeMobileNav()">Projets</a></li>
+    <li><a href="#services" onclick="closeMobileNav()">Services</a></li>
+    <li><a href="#testimonials" onclick="closeMobileNav()">Avis</a></li>
+    <li><a href="#contact" onclick="closeMobileNav()">Contact</a></li>
+  </ul>
+  <a href="Abdoul_Rahim_SIMPORE_CV2026.pdf" download="" class="ncv">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="14" height="14"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+    Telecharger CV
+  </a>
+</div>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hblob hb1"></div><div class="hblob hb2"></div><div class="hblob hb3"></div>
+  <div class="hgrid"></div>
+  <div class="hleft">
+    <div class="hbadge"><span class="bdot"></span>Disponible pour nouveaux projets</div>
+    <h1 class="hname">SIMPORE<span class="gline">Abdoul Rahim</span></h1>
+    <p class="hrole">Digital Solutions Architect</p>
+    <div class="htags">
+      <span class="htag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06A1.65 1.65 0 0 0 15 19.4a1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>Ingenieur Reseaux</span>
+      <span class="htag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>Dev Full-Stack</span>
+      <span class="htag g"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><rect x="5" y="2" width="14" height="20" rx="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>Mobile React Native</span>
+      <span class="htag g"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg>Graphiste &amp; UI/UX</span>
+      <span class="htag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M3 11l19-9-9 19-2-8-8-2z"></path></svg>Social Media Manager</span>
+      <span class="htag g"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>Consultant Digital</span>
+    </div>
+    <p class="hdesc">Je suis l'un des rares profils qui maitrise <strong>l'infrastructure reseau, le developpement web &amp; mobile, le design graphique et la strategie digitale</strong> - quatre couches, un seul interlocuteur.</p>
+    <div class="hbtns">
+      <a href="#projects" class="btnp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"></path></svg>Voir mes projets</a>
+      <a href="Abdoul_Rahim_SIMPORE_CV2026.pdf" download="" class="btno"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>Telecharger CV</a>
+      <a href="#contact" class="btno"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg><font _mstmutation="1">Contact</font></a>
+    </div>
+  </div>
+  <div class="hright">
+    <div class="pcard" id="pcard" style="transform: none; transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.5s;">
+      <div class="fbadge fb1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg><font _mstmutation="1">Reseaux &amp; Telecoms</font></div>
+      <div class="fbadge fb2"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg><font _mstmutation="1">Design &amp; Branding</font></div>
+      <div class="fbadge fb3"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="2" width="14" height="20" rx="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg><font _mstmutation="1">Mobile Dev</font></div>
+      <div class="pphoto">
+        <div class="pphoto-glow"></div>
+        <div class="porbit1"></div><div class="porbit2"></div>
+        <div class="pavatar">
+          <img src="photo.png" style="width:100%;height:100%;object-fit:cover;border-radius:50%" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <span class="pavatar-text" style="display:none">SAR</span>
+        </div>
+      </div>
+      <div class="pfoot">
+        <div><div class="pf-name">SIMPORE Abdoul Rahim</div><div class="pf-role">Digital Solutions Architect</div></div>
+        <div class="pf-loc"><span class="ldot"></span><font _mstmutation="1">Ouagadougou, BF</font></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee"><div class="mtrack">
+  <span class="mitem"><font _mstmutation="1">Reseaux &amp; Telecoms</font><span class="msep"></span></span>
+  <span class="mitem"><font _mstmutation="1">Developpement Web Full-Stack</font><span class="msep"></span></span>
+  <span class="mitem"><font _mstmutation="1">Applications Mobiles</font><span class="msep"></span></span>
+  <span class="mitem"><font _mstmutation="1">Design Graphique</font><span class="msep"></span></span>
+  <span class="mitem"><font _mstmutation="1">Social Media Management</font><span class="msep"></span></span>
+  <span class="mitem"><font _mstmutation="1">UI / UX Design</font><span class="msep"></span></span>
+  <span class="mitem"><font _mstmutation="1">Branding &amp; Identite Visuelle</font><span class="msep"></span></span>
+  <span class="mitem"><font _mstmutation="1">Transformation Digitale</font><span class="msep"></span></span>
+  <span class="mitem"><font _mstmutation="1">Reseaux &amp; Telecoms</font><span class="msep"></span></span>
+  <span class="mitem"><font _mstmutation="1">Developpement Web Full-Stack</font><span class="msep"></span></span>
+  <span class="mitem"><font _mstmutation="1">Applications Mobiles</font><span class="msep"></span></span>
+  <span class="mitem"><font _mstmutation="1">Design Graphique</font><span class="msep"></span></span>
+  <span class="mitem"><font _mstmutation="1">Social Media Management</font><span class="msep"></span></span>
+  <span class="mitem"><font _mstmutation="1">UI / UX Design</font><span class="msep"></span></span>
+  <span class="mitem"><font _mstmutation="1">Branding &amp; Identite Visuelle</font><span class="msep"></span></span>
+  <span class="mitem"><font _mstmutation="1">Transformation Digitale</font><span class="msep"></span></span>
+</div></div>
+
+<!-- ABOUT -->
+<section id="about" class="sec">
+  <div class="rv in">
+    <span class="slabel">A propos</span>
+    <h2 class="stitle">Un profil <em>360 deg</em> hors du commun</h2>
+    <p class="about-p">Ingenieur de travaux en <strong>reseaux informatiques et telecommunications</strong>, je suis aussi developpeur web &amp; mobile full-stack, graphiste et community manager.</p>
+    <p class="about-p">Qu'il s'agisse de configurer une infrastructure reseau, de coder une application mobile, de creer une identite visuelle ou de gerer les reseaux sociaux d'une marque - <strong>je gere tout, de A a Z.</strong></p>
+    <div class="about-quote"><p>Un ecosysteme digital complet. De l'infrastructure a la communication - un seul expert, une seule vision.</p></div>
+    <div class="astats">
+      <div class="astat rv d1 in"><div class="astat-n">6+</div><div class="astat-l">Domaines d'expertise</div></div>
+      <div class="astat rv d2 in"><div class="astat-n">360</div><div class="astat-l">Vision digitale complete</div></div>
+      <div class="astat rv d3 in"><div class="astat-n">100%</div><div class="astat-l">Projets livres</div></div>
+      <div class="astat rv d4 in"><div class="astat-n">FR/EN</div><div class="astat-l">Bilingue</div></div>
+    </div>
+  </div>
+  <div class="rv d2 in">
+    <div class="alist">
+      <div class="air"><span class="air-l">Nom complet</span><span class="air-v">SIMPORE Abdoul Rahim</span></div>
+      <div class="air"><span class="air-l">Initiales</span><span class="air-v">S.A.R</span></div>
+      <div class="air"><span class="air-l">Formation</span><span class="air-v">Ingenieur Reseaux &amp; Telecoms</span></div>
+      <div class="air"><span class="air-l">Localisation</span><span class="air-v">Ouagadougou, Burkina Faso</span></div>
+      <div class="air"><span class="air-l">Design</span><span class="air-v">Photoshop · Illustrator</span></div>
+      <div class="air"><span class="air-l">Reseaux sociaux</span><span class="air-v">Facebook · Instagram · LinkedIn</span></div>
+      <div class="air"><span class="air-l">Langues</span><span class="air-v">Francais · Anglais technique</span></div>
+      <div class="air"><span class="air-l">Statut</span><span class="air-v gr"><span class="status-dot-inline"></span><font _mstmutation="1"> Disponible</font></span></div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="sec sec-alt">
+  <div class="rv in" style="margin-bottom:64px">
+    <span class="slabel">Competences</span>
+    <h2 class="stitle">Ce que je <em>maitrise</em></h2>
+    <p class="ssub">Six domaines complementaires pour couvrir l'ensemble de vos besoins numeriques.</p>
+  </div>
+  <div class="sg">
+    <div class="skc rv d1 in">
+      <div class="skc-ico ico-b"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg></div>
+      <div class="skc-name">Reseaux &amp; Telecommunications</div>
+      <div class="skc-bar"><div class="skc-bar-row"><span>Architecture LAN/WAN</span><span>90%</span></div><div class="skc-track"><div class="skc-fill fb" style="width:90%"></div></div></div>
+      <div class="skc-tags"><span class="skt">TCP/IP</span><span class="skt">DNS/DHCP</span><span class="skt">Routeurs</span><span class="skt">Switchs</span><span class="skt">VPN</span><span class="skt">Supervision IT</span></div>
+    </div>
+    <div class="skc rv d2 in" style="transform: perspective(900px) rotateX(0deg) rotateY(0deg) translateZ(0px); transition: transform 0.55s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.3s; --mx: 212.8812255859375px; --my: 132.84978866577148px;">
+      <div class="skc-ico ico-b"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg></div>
+      <div class="skc-name">Developpement Web Full-Stack</div>
+      <div class="skc-bar"><div class="skc-bar-row"><span>Front &amp; Back-end</span><span>87%</span></div><div class="skc-track"><div class="skc-fill fb" style="width:87%"></div></div></div>
+      <div class="skc-tags"><span class="skt">HTML5/CSS3</span><span class="skt">JavaScript</span><span class="skt">PHP</span><span class="skt">WordPress</span><span class="skt">WooCommerce</span><span class="skt">MySQL</span></div>
+    </div>
+    <div class="skc rv d3 in">
+      <div class="skc-ico ico-g"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="5" y="2" width="14" height="20" rx="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg></div>
+      <div class="skc-name">Developpement Mobile</div>
+      <div class="skc-bar"><div class="skc-bar-row"><span>React Native cross-platform</span><span>83%</span></div><div class="skc-track"><div class="skc-fill fg" style="width:83%"></div></div></div>
+      <div class="skc-tags"><span class="skt">React Native</span><span class="skt">Expo</span><span class="skt">Android</span><span class="skt">iOS</span><span class="skt">API REST</span></div>
+    </div>
+    <div class="skc rv d1 in">
+      <div class="skc-ico ico-a"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg></div>
+      <div class="skc-name">Design Graphique &amp; Branding</div>
+      <div class="skc-bar"><div class="skc-bar-row"><span>Identite visuelle complete</span><span>91%</span></div><div class="skc-track"><div class="skc-fill fa" style="width:91%"></div></div></div>
+      <div class="skc-tags"><span class="skt">Photoshop</span><span class="skt">Illustrator</span><span class="skt">Logo Design</span><span class="skt">Charte graphique</span><span class="skt">UI/UX</span></div>
+    </div>
+    <div class="skc rv d2 in" style="transform: perspective(900px) rotateX(0deg) rotateY(0deg) translateZ(0px); transition: transform 0.55s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.3s; --mx: 143.79998779296875px; --my: 23.4375px;">
+      <div class="skc-ico ico-g"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></div>
+      <div class="skc-name">Social Media Management</div>
+      <div class="skc-bar"><div class="skc-bar-row"><span>Gestion &amp; strategie</span><span>85%</span></div><div class="skc-track"><div class="skc-fill fg" style="width:85%"></div></div></div>
+      <div class="skc-tags"><span class="skt">Facebook</span><span class="skt">Instagram</span><span class="skt">LinkedIn</span><span class="skt">WhatsApp Business</span><span class="skt">Contenu visuel</span></div>
+    </div>
+    <div class="skc rv d3 in" style="transform: perspective(900px) rotateX(0deg) rotateY(0deg) translateZ(0px); transition: transform 0.55s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.3s; --mx: 18.15191650390625px; --my: 237.41096115112305px;">
+      <div class="skc-ico ico-b"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="11" width="18" height="11" rx="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg></div>
+      <div class="skc-name">Securite &amp; Infrastructure</div>
+      <div class="skc-bar"><div class="skc-bar-row"><span>Deploiement &amp; securisation</span><span>80%</span></div><div class="skc-track"><div class="skc-fill fb" style="width:80%"></div></div></div>
+      <div class="skc-tags"><span class="skt">Hebergement</span><span class="skt">Deploiement</span><span class="skt">Migration</span><span class="skt">Cybersecurite</span><span class="skt">Backup</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" class="sec">
+  <div class="rv in" style="margin-bottom:64px">
+    <span class="slabel">Parcours</span>
+    <h2 class="stitle">Mon <em>experience</em></h2>
+    <p class="ssub">Un parcours construit autour d'une conviction : chaque entreprise merite un ecosysteme digital complet et coherent.</p>
+  </div>
+  <div class="exp-wrap">
+    <div class="exp-timeline rv in">
+      <div class="exp-tl-line"></div>
+      <div class="exp-item">
+        <div class="exp-dot"></div>
+        <div class="exp-body">
+          <div class="exp-date">Novembre 2025 — Mars 2026 · En cours</div>
+          <div class="exp-role">Developpeur PHP / jQuery — Stagiaire</div>
+          <div class="exp-company">EMERA AI · Burkina Faso</div>
+          <div class="exp-desc">Developpement et maintenance de fonctionnalites web en PHP. Integration d'interfaces utilisateurs dynamiques avec jQuery. Participation aux tests et a l'amelioration des performances des applications.</div>
+          <div class="exp-chips"><span class="chip">PHP</span><span class="chip">jQuery</span><span class="chip">Tests</span><span class="chip">Performance</span></div>
+        </div>
+      </div>
+      <div class="exp-item">
+        <div class="exp-dot"></div>
+        <div class="exp-body">
+          <div class="exp-date">2025 · 3 mois</div>
+          <div class="exp-role">Developpeur Full-Stack — Stagiaire</div>
+          <div class="exp-company">Direction Generale des Communications Electroniques (DGCE) · Burkina Faso</div>
+          <div class="exp-desc">Conception et developpement d'applications web internes pour la gestion de donnees administratives. Mise en place de bases de donnees MySQL et structuration du back-end. Developpement de tableaux de bord et de systemes de visualisation de donnees. Implementation de fonctionnalites metiers : statistiques, export PDF et generation de recus.</div>
+          <div class="exp-chips"><span class="chip">Full-Stack Web</span><span class="chip">MySQL</span><span class="chip">Dashboard</span><span class="chip">Export PDF</span><span class="chip">Analyse metier</span></div>
+        </div>
+      </div>
+      <div class="exp-item">
+        <div class="exp-dot"></div>
+        <div class="exp-body">
+          <div class="exp-date">2024 · 2 mois</div>
+          <div class="exp-role">Technicien Reseaux &amp; Systemes — Stagiaire</div>
+          <div class="exp-company">SATEL SA · Burkina Faso</div>
+          <div class="exp-desc">Installation et configuration d'equipements reseau : routeurs, switches, postes clients. Diagnostic et maintenance des infrastructures reseau. Supervision du trafic reseau avec Wireshark et outils de monitoring.</div>
+          <div class="exp-chips"><span class="chip">Routeurs &amp; Switches</span><span class="chip">Wireshark</span><span class="chip">Monitoring</span><span class="chip">Diagnostic reseau</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TOOLS -->
+<section id="tools" class="sec-alt">
+  <div class="rv in" style="margin-bottom:52px">
+    <span class="slabel">Arsenal technique</span>
+    <h2 class="stitle">Mes <em>outils</em> du quotidien</h2>
+    <p class="ssub">Langages, frameworks, bases de donnees, design et reseaux. En apprentissage continu.</p>
+  </div>
+  <div class="tools-filter rv d1 in">
+    <button class="tf-btn on" onclick="filterTools('all',this)">Tous</button>
+    <button class="tf-btn" onclick="filterTools('dev',this)">Dev Web</button>
+    <button class="tf-btn" onclick="filterTools('mobile',this)">Mobile</button>
+    <button class="tf-btn" onclick="filterTools('db',this)">Bases de donnees</button>
+    <button class="tf-btn" onclick="filterTools('reseau',this)">Reseaux</button>
+    <button class="tf-btn" onclick="filterTools('design',this)">Design</button>
+    <button class="tf-btn" onclick="filterTools('cms',this)">CMS / E-com</button>
+    <button class="tf-btn" onclick="filterTools('social',this)">Social Media</button>
+    <button class="tf-btn" onclick="filterTools('tools',this)">Outils</button>
+  </div>
+  <div class="tools-grid" id="toolsGrid">
+    <div class="tc tc-js rv d1 in" data-cat="dev"><div class="tc-glow"></div><div class="tc-logo"><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><rect width="24" height="24" rx="2" fill="#F7DF1E"></rect><path d="M0 0h24v24H0V0zm22.034 18.276c-.175-1.095-.888-2.015-3.003-2.873-.736-.345-1.554-.585-1.797-1.14-.091-.33-.105-.51-.046-.705.15-.646.915-.84 1.515-.66.39.12.75.42.976.9 1.034-.676 1.034-.676 1.755-1.125-.27-.42-.404-.601-.586-.78-.63-.705-1.469-1.065-2.834-1.034l-.705.089c-.676.165-1.32.525-1.71 1.005-1.14 1.291-.811 3.541.569 4.471 1.365 1.02 3.361 1.244 3.616 2.205.24 1.17-.87 1.545-1.966 1.41-.811-.18-1.26-.586-1.755-1.336l-1.83 1.051c.21.48.45.689.81 1.109 1.74 1.756 6.09 1.666 6.871-1.004.029-.09.24-.705.074-1.65zm-8.983-7.245h-2.248c0 1.938-.009 3.864-.009 5.805 0 1.232.063 2.363-.138 2.711-.33.689-1.18.601-1.566.48-.396-.196-.597-.466-.83-.855-.063-.105-.11-.196-.127-.196l-1.825 1.125c.305.63.75 1.172 1.324 1.517.855.51 2.004.675 3.207.405.783-.226 1.458-.691 1.811-1.411.51-.93.402-2.07.397-3.346.012-2.054 0-4.109 0-6.179l.004-.056z" fill="#000"></path></svg></div><div class="tc-name">JavaScript</div><div class="tc-cat">Dev Web</div><div class="tc-bar-wrap"><div class="tc-bar-row"><span>Niveau</span><span class="tc-pct">88%</span></div><div class="tc-track"><div class="tc-bar" style="width:88%"></div></div></div><div class="tc-desc">ES6+, DOM, fetch API, logique metier.</div></div>
+    <div class="tc tc-php rv d2 in" data-cat="dev"><div class="tc-glow"></div><div class="tc-logo"><svg viewBox="0 0 50 20" xmlns="http://www.w3.org/2000/svg"><ellipse cx="25" cy="10" rx="24" ry="9" fill="#777BB4"></ellipse><text x="25" y="14.5" text-anchor="middle" font-family="Arial,sans-serif" font-weight="900" font-size="11" fill="white" letter-spacing="1" _mstHash="190">php</text></svg></div><div class="tc-name">PHP</div><div class="tc-cat">Dev Web</div><div class="tc-bar-wrap"><div class="tc-bar-row"><span>Niveau</span><span class="tc-pct">84%</span></div><div class="tc-track"><div class="tc-bar" style="width:84%"></div></div></div><div class="tc-desc">Back-end, scripts serveur, APIs dynamiques.</div></div>
+    <div class="tc tc-html rv d3 in" data-cat="dev"><div class="tc-glow"></div><div class="tc-logo"><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.564-2.438L1.5 0zm7.031 9.75l-.232-2.718 10.059.003.23-2.622L5.412 4.41l.698 8.01h9.126l-.326 3.426-2.91.804-2.955-.81-.188-2.11H6.248l.33 4.171L12 19.351l5.379-1.443.744-8.157H8.531z" fill="#E34F26"></path></svg></div><div class="tc-name">HTML5 / CSS3</div><div class="tc-cat">Dev Web</div><div class="tc-bar-wrap"><div class="tc-bar-row"><span>Niveau</span><span class="tc-pct">93%</span></div><div class="tc-track"><div class="tc-bar" style="width:93%"></div></div></div><div class="tc-desc">Maquettage, responsive, animations avancees.</div></div>
+    <div class="tc tc-css rv d4 in" data-cat="dev"><div class="tc-glow"></div><div class="tc-logo"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><rect width="24" height="24" rx="4" fill="#7952B3"></rect><path d="M6.375 3.5h5.977c1.43 0 2.61.282 3.543.844.933.563 1.398 1.453 1.398 2.672 0 .64-.156 1.2-.469 1.68-.312.477-.765.84-1.359 1.09v.094c.757.187 1.344.562 1.758 1.125.422.563.633 1.265.633 2.109 0 .64-.133 1.21-.399 1.71-.265.5-.64.922-1.124 1.266-.484.344-1.063.61-1.735.797-.672.188-1.398.281-2.18.281H6.375V3.5zm2.578 5.695h3.07c.82 0 1.446-.18 1.875-.539.43-.36.645-.844.645-1.453 0-.656-.195-1.14-.586-1.453-.39-.312-.953-.469-1.687-.469H8.953v3.914zm0 6.133h3.258c.86 0 1.531-.188 2.016-.563.484-.375.726-.937.726-1.687 0-.735-.25-1.289-.75-1.664-.5-.375-1.187-.563-2.062-.563H8.953v4.477z" fill="white"></path></svg></div><div class="tc-name">Bootstrap</div><div class="tc-cat">Dev Web</div><div class="tc-bar-wrap"><div class="tc-bar-row"><span>Niveau</span><span class="tc-pct">85%</span></div><div class="tc-track"><div class="tc-bar" style="width:85%"></div></div></div><div class="tc-desc">Composants UI, grilles, responsive framework.</div></div>
+    <div class="tc tc-rn rv d1 in" data-cat="mobile"><div class="tc-glow"></div><div class="tc-logo"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="2.139" fill="#61DAFB"></circle><path d="M12 7.67c4.5 0 8.16 1.94 8.16 4.33S16.5 16.33 12 16.33 3.84 14.39 3.84 12 7.5 7.67 12 7.67z" stroke="#61DAFB" stroke-width="1.1" fill="none"></path><path d="M8.67 9.84c2.25-3.9 5.36-6.38 6.94-5.48 1.58.9 1.22 4.84-1.03 8.74s-5.36 6.38-6.94 5.48c-1.58-.9-1.22-4.84 1.03-8.74z" stroke="#61DAFB" stroke-width="1.1" fill="none"></path><path d="M8.67 14.16c-2.25-3.9-2.61-7.84-1.03-8.74 1.58-.9 4.69 1.58 6.94 5.48s2.61 7.84 1.03 8.74c-1.58.9-4.69-1.58-6.94-5.48z" stroke="#61DAFB" stroke-width="1.1" fill="none"></path></svg></div><div class="tc-name">React Native</div><div class="tc-cat">Mobile</div><div class="tc-bar-wrap"><div class="tc-bar-row"><span>Niveau</span><span class="tc-pct">83%</span></div><div class="tc-track"><div class="tc-bar" style="width:83%"></div></div></div><div class="tc-desc">Apps iOS &amp; Android cross-platform.</div></div>
+    <div class="tc tc-expo rv d2 in" data-cat="mobile"><div class="tc-glow"></div><div class="tc-logo"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M1.918 21.337C2.648 22.607 4.25 23 5.716 23c1.455 0 3.164-.393 3.164-2.047V9.142c0-.442.349-.802.787-.802h4.666c.437 0 .787.36.787.802v11.811C15.12 22.607 16.829 23 18.284 23c1.466 0 3.068-.393 3.798-1.663L23 19 12.66 1.457C12.317.858 11.683.502 11 .502c-.683 0-1.317.356-1.66.955L1 19l.918 2.337z" fill="white"></path></svg></div><div class="tc-name">Expo</div><div class="tc-cat">Mobile</div><div class="tc-bar-wrap"><div class="tc-bar-row"><span>Niveau</span><span class="tc-pct">82%</span></div><div class="tc-track"><div class="tc-bar" style="width:82%"></div></div></div><div class="tc-desc">Build, OTA, SDK natif, deploiement stores.</div></div>
+    <div class="tc tc-api rv d3 in" data-cat="mobile"><div class="tc-glow"></div><div class="tc-logo"><svg viewBox="0 0 24 24" fill="none"><rect x="1" y="7" width="22" height="10" rx="3" stroke="#10b981" stroke-width="1.4" fill="none"></rect><text x="12" y="14.5" text-anchor="middle" font-family="monospace" font-size="6.5" font-weight="800" fill="#10b981" _mstHash="216">REST</text><path d="M19 4l3 3-3 3M5 20l-3-3 3-3" stroke="#34d399" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><div class="tc-name">API REST</div><div class="tc-cat">Mobile</div><div class="tc-bar-wrap"><div class="tc-bar-row"><span>Niveau</span><span class="tc-pct">85%</span></div><div class="tc-track"><div class="tc-bar" style="width:85%"></div></div></div><div class="tc-desc">Integration, requetes async, auth JWT.</div></div>
+    <div class="tc tc-mysql rv d1 in" data-cat="db"><div class="tc-glow"></div><div class="tc-logo"><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M16.405 5.501c-.115 0-.193.014-.274.033v.013h.014c.054.104.146.19.256.243l.027.013c.024-.005.05-.009.075-.014-.004-.218-.146-.289-.098-.288zM4.975 7.32c-.113 0-.218.015-.303.04v.017h.016c.063.122.17.223.3.284l.025.016c.03-.006.062-.01.094-.015-.007-.255-.178-.342-.132-.342zM12 0C5.374 0 0 2.686 0 6c0 3.314 5.374 6 12 6s12-2.686 12-6c0-3.314-5.374-6-12-6zm0 2c5.514 0 10 1.791 10 4S17.514 10 12 10 2 8.209 2 6s4.486-4 10-4zM0 8v2c0 3.314 5.374 6 12 6s12-2.686 12-6V8c0 3.314-5.374 6-12 6S0 11.314 0 8zm0 4v2c0 3.314 5.374 6 12 6s12-2.686 12-6v-2c0 3.314-5.374 6-12 6S0 15.314 0 12zm0 4v2c0 3.314 5.374 6 12 6s12-2.686 12-6v-2c0 3.314-5.374 6-12 6S0 19.314 0 16z" fill="#4479A1"></path></svg></div><div class="tc-name">MySQL</div><div class="tc-cat">Base de donnees</div><div class="tc-bar-wrap"><div class="tc-bar-row"><span>Niveau</span><span class="tc-pct">80%</span></div><div class="tc-track"><div class="tc-bar" style="width:80%"></div></div></div><div class="tc-desc">BDD relationnelles, requetes SQL, jointures.</div></div>
+    <div class="tc tc-pg rv d2 in" data-cat="db"><div class="tc-glow"></div><div class="tc-logo"><svg viewBox="0 0 32 34" fill="none"><ellipse cx="16" cy="14" rx="11" ry="12" fill="#336791"></ellipse><ellipse cx="12" cy="9" rx="4" ry="3" fill="#4d8fac" opacity=".5"></ellipse><ellipse cx="25" cy="8" rx="5" ry="6" fill="#4d8fac"></ellipse><ellipse cx="25" cy="8" rx="3" ry="4" fill="#336791" opacity=".6"></ellipse><path d="M5 17 Q1 20 2 26 Q3 29 6 28" stroke="#4d8fac" stroke-width="2.5" stroke-linecap="round" fill="none"></path><circle cx="12" cy="11" r="2" fill="white"></circle><circle cx="20" cy="11" r="2" fill="white"></circle><circle cx="12.7" cy="11.5" r="1" fill="#1a3552"></circle><circle cx="20.7" cy="11.5" r="1" fill="#1a3552"></circle></svg></div><div class="tc-learning">En apprentissage</div><div class="tc-name">PostgreSQL</div><div class="tc-cat">Base de donnees</div><div class="tc-bar-wrap"><div class="tc-bar-row"><span>Niveau</span><span class="tc-pct">55%</span></div><div class="tc-track"><div class="tc-bar" style="width:55%"></div></div></div><div class="tc-desc">BDD relationnelle avancee, requetes complexes.</div></div>
+    <div class="tc tc-mongo rv d3 in" data-cat="db"><div class="tc-glow"></div><div class="tc-logo"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.193 9.555c-1.264-5.58-4.252-7.414-4.573-8.115-.28-.394-.53-.954-.735-1.44-.036.495-.055.685-.523 1.184-.723.566-4.438 3.682-4.74 10.02-.282 5.912 4.27 9.435 4.888 9.884l.07.05A73.49 73.49 0 0 1 11.91 24h.481c.114-1.032.284-2.056.51-3.07.417-.296.604-.463.85-.693a11.342 11.342 0 0 0 3.639-8.464c.01-.814-.103-1.662-.197-2.218zm-5.336 8.195s0-8.291.275-8.29c.213 0 .49 10.695.49 10.695-.381-.045-.765-1.76-.765-2.405z" fill="#4DB33D"></path></svg></div><div class="tc-learning">En apprentissage</div><div class="tc-name">MongoDB</div><div class="tc-cat">Base de donnees</div><div class="tc-bar-wrap"><div class="tc-bar-row"><span>Niveau</span><span class="tc-pct">50%</span></div><div class="tc-track"><div class="tc-bar" style="width:50%"></div></div></div><div class="tc-desc">BDD NoSQL, documents JSON, schemas flexibles.</div></div>
+    <div class="tc tc-cis rv d1 in" data-cat="reseau"><div class="tc-glow"></div><div class="tc-logo"><svg viewBox="0 0 24 24" fill="none"><rect x="1" y="4" width="22" height="6" rx="1.5" stroke="#049fd9" stroke-width="1.3" fill="rgba(4,159,217,.08)"></rect><rect x="1" y="14" width="22" height="6" rx="1.5" stroke="#049fd9" stroke-width="1.3" fill="rgba(4,159,217,.08)"></rect><circle cx="4.5" cy="7" r=".9" fill="#049fd9"></circle><circle cx="7" cy="7" r=".9" fill="#1ba0d7"></circle><circle cx="4.5" cy="17" r=".9" fill="#049fd9"></circle><circle cx="7" cy="17" r=".9" fill="#1ba0d7"></circle><text x="15" y="9" text-anchor="middle" font-family="monospace" font-size="4.5" font-weight="700" fill="#049fd9" _mstHash="239">CISCO</text><text x="15" y="19" text-anchor="middle" font-family="monospace" font-size="4.5" font-weight="700" fill="#049fd9" _mstHash="240">IOS</text></svg></div><div class="tc-name">Cisco IOS</div><div class="tc-cat">Reseaux</div><div class="tc-bar-wrap"><div class="tc-bar-row"><span>Niveau</span><span class="tc-pct">82%</span></div><div class="tc-track"><div class="tc-bar" style="width:82%"></div></div></div><div class="tc-desc">Routeurs, switchs, VLAN, OSPF, STP.</div></div>
+    <div class="tc tc-tcp rv d2 in" data-cat="reseau"><div class="tc-glow"></div><div class="tc-logo"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12.55a11 11 0 0 1 14.08 0" stroke="#3b82f6" stroke-width="1.6" stroke-linecap="round"></path><path d="M1.42 9a16 16 0 0 1 21.16 0" stroke="#60a5fa" stroke-width="1.4" stroke-linecap="round"></path><path d="M8.53 16.11a6 6 0 0 1 6.95 0" stroke="#3b82f6" stroke-width="1.6" stroke-linecap="round"></path><circle cx="12" cy="20" r="1.4" fill="#3b82f6"></circle></svg></div><div class="tc-name">TCP/IP &amp; DNS</div><div class="tc-cat">Reseaux</div><div class="tc-bar-wrap"><div class="tc-bar-row"><span>Niveau</span><span class="tc-pct">90%</span></div><div class="tc-track"><div class="tc-bar" style="width:90%"></div></div></div><div class="tc-desc">Adressage IP, DNS, DHCP, routage.</div></div>
+    <div class="tc tc-vpn rv d3 in" data-cat="reseau"><div class="tc-glow"></div><div class="tc-logo"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="11" width="18" height="11" rx="2" stroke="#f59e0b" stroke-width="1.4" fill="rgba(245,158,11,.07)"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4" stroke="#fbbf24" stroke-width="1.4" stroke-linecap="round"></path><circle cx="12" cy="16.5" r="1.5" fill="#f59e0b"></circle><line x1="12" y1="18" x2="12" y2="20" stroke="#f59e0b" stroke-width="1.3"></line></svg></div><div class="tc-name">VPN &amp; Securite</div><div class="tc-cat">Reseaux</div><div class="tc-bar-wrap"><div class="tc-bar-row"><span>Niveau</span><span class="tc-pct">80%</span></div><div class="tc-track"><div class="tc-bar" style="width:80%"></div></div></div><div class="tc-desc">Tunnels VPN, firewalls, ACL, perimetre.</div></div>
+    <div class="tc tc-ps rv d1 in" data-cat="design"><div class="tc-glow"></div><div class="tc-logo"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><rect width="24" height="24" rx="2" fill="#001e36"></rect><path d="M6 17.5V6.5h3.5c.7 0 1.3.1 1.8.3.5.2.9.5 1.2.9.3.4.4.9.4 1.5 0 .6-.1 1.1-.4 1.5-.3.4-.7.7-1.2.9-.5.2-1.1.3-1.8.3H7.7v5.6H6zm1.7-7h1.7c.6 0 1-.1 1.3-.4.3-.2.4-.6.4-1.1s-.1-.9-.4-1.1C10.4 7.7 10 7.6 9.4 7.6H7.7V10.5zM14.5 17.6c-.6-.2-1.1-.4-1.5-.8l.5-1.2c.4.3.9.6 1.4.7.5.2 1 .2 1.6.2.6 0 1-.1 1.3-.3.3-.2.5-.5.5-.8 0-.3-.1-.5-.3-.6-.2-.2-.4-.3-.7-.4l-1.1-.3c-.7-.2-1.3-.5-1.6-.9-.4-.4-.5-.9-.5-1.5 0-.5.1-.9.4-1.3.3-.4.6-.7 1.1-.9.5-.2 1-.3 1.7-.3.5 0 1 .1 1.5.2.5.1.9.3 1.3.6l-.5 1.1c-.4-.2-.7-.4-1.1-.5-.4-.1-.8-.2-1.2-.2-.5 0-.9.1-1.1.3-.2.2-.4.5-.4.8 0 .2.1.4.2.6.1.2.3.3.5.4l1.1.3c.8.2 1.4.5 1.7.9.4.4.5.9.5 1.5 0 .5-.1 1-.4 1.4-.3.4-.7.7-1.2.9-.5.2-1.1.3-1.8.3-.7.1-1.4 0-2-.2z" fill="#31a8ff"></path></svg></div><div class="tc-name">Photoshop</div><div class="tc-cat">Design</div><div class="tc-bar-wrap"><div class="tc-bar-row"><span>Niveau</span><span class="tc-pct">92%</span></div><div class="tc-track"><div class="tc-bar" style="width:92%"></div></div></div><div class="tc-desc">Retouche, compositions, visuels social media.</div></div>
+    <div class="tc tc-ai rv d2 in" data-cat="design"><div class="tc-glow"></div><div class="tc-logo"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><rect width="24" height="24" rx="2" fill="#1a0a00"></rect><path d="M10.5 15.4H7.3l-.7 2.1H4.9L8.1 8h1.8l3.2 9.5h-1.8l-.8-2.1zm-2.8-1.4h2.4L8.9 10.2 7.7 14zm6.3-6h1.7v9.5H14V8z" fill="#ff9a00"></path></svg></div><div class="tc-name">Illustrator</div><div class="tc-cat">Design</div><div class="tc-bar-wrap"><div class="tc-bar-row"><span>Niveau</span><span class="tc-pct">90%</span></div><div class="tc-track"><div class="tc-bar" style="width:90%"></div></div></div><div class="tc-desc">Logos vectoriels, chartes, illustrations, print.</div></div>
+    <div class="tc tc-fig rv d3 in" data-cat="design"><div class="tc-glow"></div><div class="tc-logo"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M8 24c2.208 0 4-1.792 4-4v-4H8c-2.208 0-4 1.792-4 4s1.792 4 4 4z" fill="#0acf83"></path><path d="M4 12c0-2.208 1.792-4 4-4h4v8H8c-2.208 0-4-1.792-4-4z" fill="#a259ff"></path><path d="M4 4c0-2.208 1.792-4 4-4h4v8H8C5.792 8 4 6.208 4 4z" fill="#f24e1e"></path><path d="M12 0h4c2.208 0 4 1.792 4 4s-1.792 4-4 4h-4V0z" fill="#ff7262"></path><path d="M20 12c0 2.208-1.792 4-4 4s-4-1.792-4-4 1.792-4 4-4 4 1.792 4 4z" fill="#1abcfe"></path></svg></div><div class="tc-learning">En apprentissage</div><div class="tc-name">Figma</div><div class="tc-cat">Design / UI</div><div class="tc-bar-wrap"><div class="tc-bar-row"><span>Niveau</span><span class="tc-pct">60%</span></div><div class="tc-track"><div class="tc-bar" style="width:60%"></div></div></div><div class="tc-desc">Maquettes UI, prototypes, design systemes.</div></div>
+    <div class="tc tc-wp rv d1 in" data-cat="cms"><div class="tc-glow"></div><div class="tc-logo"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zM3.457 12c0-1.136.244-2.215.674-3.191L7.482 19.5A8.545 8.545 0 0 1 3.457 12zm8.543 8.543a8.556 8.556 0 0 1-2.449-.362l2.6-7.556 2.665 7.304c.017.042.038.08.06.116a8.558 8.558 0 0 1-2.876.498zm1.188-12.65c.519-.027.986-.082.986-.082.465-.055.41-.738-.055-.711 0 0-1.395.11-2.295.11-.847 0-2.27-.11-2.27-.11-.465-.027-.52.683-.056.71 0 0 .44.056.904.083l1.343 3.678-1.887 5.657-3.137-9.335c.52-.027.986-.082.986-.082.465-.055.41-.738-.055-.711 0 0-1.394.11-2.295.11-.16 0-.35-.005-.55-.01C6.562 4.38 9.147 3.457 12 3.457c2.12 0 4.065.717 5.613 1.907-.036-.002-.07-.006-.107-.006-1.135 0-1.944.988-1.944 2.051 0 .957.55 1.764 1.135 2.722.44.77.957 1.764.957 3.196 0 .989-.38 2.137-.876 3.733l-1.148 3.832-4.162-12.385 1.72.003zm4.457 11.73l2.648-7.65c.495-1.24.66-2.23.66-3.109 0-.32-.021-.617-.06-.895A8.542 8.542 0 0 1 20.543 12a8.536 8.536 0 0 1-2.898 6.623z" fill="#21759b"></path></svg></div><div class="tc-name">WordPress</div><div class="tc-cat">CMS</div><div class="tc-bar-wrap"><div class="tc-bar-row"><span>Niveau</span><span class="tc-pct">90%</span></div><div class="tc-track"><div class="tc-bar" style="width:90%"></div></div></div><div class="tc-desc">Sites vitrines, blogs, themes, plugins, SEO.</div></div>
+    <div class="tc tc-woo rv d2 in" data-cat="cms" style="--mx: 243.96246337890625px; --my: 151.38750457763672px; transform: perspective(900px) rotateX(0deg) rotateY(0deg) translateZ(0px); transition: transform 0.55s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.3s;"><div class="tc-glow"></div><div class="tc-logo"><svg viewBox="0 0 32 32" fill="none"><rect width="32" height="32" rx="6" fill="#96588A"></rect><rect x="3" y="5" width="26" height="16" rx="4" fill="white"></rect><polygon points="5,21 4,28 12,21" fill="white"></polygon><text x="16" y="16" text-anchor="middle" font-family="Arial Black,sans-serif" font-weight="900" font-size="8" fill="#96588A" _mstHash="277">Woo</text></svg></div><div class="tc-name">WooCommerce</div><div class="tc-cat">E-Commerce</div><div class="tc-bar-wrap"><div class="tc-bar-row"><span>Niveau</span><span class="tc-pct">85%</span></div><div class="tc-track"><div class="tc-bar" style="width:85%"></div></div></div><div class="tc-desc">Boutiques en ligne, paiement, stocks.</div></div>
+    <div class="tc tc-fb rv d1 in" data-cat="social"><div class="tc-glow"></div><div class="tc-logo"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" fill="#1877f2"></path></svg></div><div class="tc-name">Facebook / Meta</div><div class="tc-cat">Social Media</div><div class="tc-bar-wrap"><div class="tc-bar-row"><span>Niveau</span><span class="tc-pct">88%</span></div><div class="tc-track"><div class="tc-bar" style="width:88%"></div></div></div><div class="tc-desc">Pages pro, Meta Business Suite, publicites.</div></div>
+    <div class="tc tc-li rv d2 in" data-cat="social"><div class="tc-glow"></div><div class="tc-logo"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" fill="#0077b5"></path></svg></div><div class="tc-name">LinkedIn</div><div class="tc-cat">Social Media</div><div class="tc-bar-wrap"><div class="tc-bar-row"><span>Niveau</span><span class="tc-pct">80%</span></div><div class="tc-track"><div class="tc-bar" style="width:80%"></div></div></div><div class="tc-desc">Profil pro, contenu B2B, networking.</div></div>
+    <div class="tc tc-wa rv d3 in" data-cat="social"><div class="tc-glow"></div><div class="tc-logo"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z" fill="#25d366"></path></svg></div><div class="tc-name">WhatsApp Business</div><div class="tc-cat">Social Media</div><div class="tc-bar-wrap"><div class="tc-bar-row"><span>Niveau</span><span class="tc-pct">85%</span></div><div class="tc-track"><div class="tc-bar" style="width:85%"></div></div></div><div class="tc-desc">Catalogues, diffusion, relation client.</div></div>
+    <div class="tc tc-git rv d1 in" data-cat="tools"><div class="tc-glow"></div><div class="tc-logo"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M23.546 10.93L13.067.452a1.55 1.55 0 0 0-2.188 0L8.708 2.627l2.76 2.76a1.838 1.838 0 0 1 2.327 2.341l2.658 2.66a1.838 1.838 0 0 1 1.9 3.039 1.837 1.837 0 0 1-2.6 0 1.846 1.846 0 0 1-.404-1.996L12.86 8.955v6.525c.176.086.342.203.488.348a1.848 1.848 0 0 1 0 2.6 1.846 1.846 0 0 1-2.609 0 1.846 1.846 0 0 1 0-2.6 1.8 1.8 0 0 1 .577-.382V8.888a1.8 1.8 0 0 1-.577-.382 1.846 1.846 0 0 1-.401-2.018L7.578 3.72 .454 10.874a1.55 1.55 0 0 0 0 2.188l10.48 10.478a1.549 1.549 0 0 0 2.187 0l10.424-10.434a1.55 1.55 0 0 0 0-2.187" fill="#f05032"></path></svg></div><div class="tc-name">Git</div><div class="tc-cat">Outil</div><div class="tc-bar-wrap"><div class="tc-bar-row"><span>Niveau</span><span class="tc-pct">78%</span></div><div class="tc-track"><div class="tc-bar" style="width:78%"></div></div></div><div class="tc-desc">Versioning, branches, commits, collaboration.</div></div>
+    <div class="tc tc-vs rv d2 in" data-cat="tools" style="--mx: 190.1881103515625px; --my: 167.28427696228027px; transform: perspective(900px) rotateX(0deg) rotateY(0deg) translateZ(0px); transition: transform 0.55s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.3s;"><div class="tc-glow"></div><div class="tc-logo"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M23.15 2.587L18.21.21a1.494 1.494 0 0 0-1.705.29l-9.46 8.63-4.12-3.128a.999.999 0 0 0-1.276.057L.327 7.261A1 1 0 0 0 .326 8.74L3.899 12 .326 15.26a1 1 0 0 0 .001 1.479L1.65 17.94a.999.999 0 0 0 1.276.057l4.12-3.128 9.46 8.63a1.492 1.492 0 0 0 1.704.29l4.942-2.377A1.5 1.5 0 0 0 24 20.06V3.939a1.5 1.5 0 0 0-.85-1.352zm-5.146 14.861L10.826 12l7.178-5.448v10.896z" fill="#007acc"></path></svg></div><div class="tc-name">VS Code</div><div class="tc-cat">Outil</div><div class="tc-bar-wrap"><div class="tc-bar-row"><span>Niveau</span><span class="tc-pct">90%</span></div><div class="tc-track"><div class="tc-bar" style="width:90%"></div></div></div><div class="tc-desc">Editeur principal, extensions, debug.</div></div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     PROJECTS — Section refaite
+══════════════════════════════════════════ -->
+<section id="projects" class="sec sec-alt">
+  <div class="rv in" style="margin-bottom:48px">
+    <span class="slabel">Projets</span>
+    <h2 class="stitle">Travaux <em>selectionnes</em></h2>
+    <p class="ssub">Des realisations concretes couvrant le developpement, le design et la communication digitale.</p>
+  </div>
+
+  <!-- Filtres -->
+  <div class="projects-filter rv d1 in">
+    <button class="pf-btn on" onclick="filterProjects('all',this)">Tous</button>
+    <button class="pf-btn" onclick="filterProjects('web',this)">Sites Web</button>
+    <button class="pf-btn" onclick="filterProjects('app',this)">Applications</button>
+    <button class="pf-btn" onclick="filterProjects('mobile',this)">Mobile</button>
+    <button class="pf-btn" onclick="filterProjects('perso',this)">Projets perso</button>
+  </div>
+
+  <div class="pg" id="projectsGrid">
+
+    <!-- 1. Mon Portfolio — badge clignotant bleu -->
+    <div class="pjc rv d1 in" data-pcat="web perso" style="transform: perspective(900px) rotateX(0deg) rotateY(0deg) translateZ(0px); transition: transform 0.55s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.3s;">
+      <div class="pjc-portfolio-badge"><span class="bp-dot"></span><font _mstmutation="1">Coded by me</font></div>
+      <a href="https://rahimdev-portfolio.great-site.net" class="pjc-arrow" title="Ce site" onclick="return false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></a>
+      <div class="pjc-vis" style="height:200px">
+        <div class="pjc-vis-bg pvb1"></div>
+        <div class="pjc-img-wrap"><div class="img-placeholder"><img src="portfolio.png"></div></div>
+        <div class="pjc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M20 7H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"></path><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg></div>
+      </div>
+      <div class="pjc-body">
+        <div class="pjc-type">Portfolio Personnel</div>
+        <div class="pjc-name">Mon Portfolio — SAR</div>
+        <div class="pjc-desc">Ce portfolio que vous consultez — concu et code de A a Z par mes soins. Design moderne, animations CSS avancees, responsive complet, curseur personnalise et effets 3D tilt.</div>
+        <div class="pjc-stack"><span class="stk">HTML5</span><span class="stk">CSS3</span><span class="stk">JavaScript</span><span class="stk">Animations</span><span class="stk">Responsive</span></div>
+      </div>
+    </div>
+
+    <!-- 2. Golden Ideas -->
+    <div class="pjc rv d2 in" data-pcat="web" style="transform: perspective(900px) rotateX(0deg) rotateY(0deg) translateZ(0px); transition: transform 0.55s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.3s;">
+      <a href="https://goldenideas.bf" target="_blank" class="pjc-arrow" title="Voir le site"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></a>
+      <div class="pjc-vis" style="height:200px">
+        <div class="pjc-vis-bg pvb4"></div>
+        <div class="pjc-img-wrap"><div class="img-placeholder"><img src="projectgolden.png"></div></div>
+        <div class="pjc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path><line x1="2" y1="12" x2="22" y2="12"></line></svg></div>
+      </div>
+      <div class="pjc-body">
+        <div class="pjc-type">Site Web Entreprise</div>
+        <div class="pjc-name">Golden Ideas</div>
+        <div class="pjc-desc">Site vitrine pour Golden Ideas, entreprise specialisee dans les solutions digitales et informatiques. Presentation des services, dematerialisation, identite visuelle soignee.</div>
+        <div class="pjc-stack"><span class="stk p">WordPress</span><span class="stk p">PHP</span><span class="stk p">MySQL</span><span class="stk p">UI/UX</span></div>
+      </div>
+    </div>
+
+    <!-- 3. KODEX — Projet perso -->
+    <div class="pjc rv d1 in" data-pcat="web perso" style="transform: perspective(900px) rotateX(0deg) rotateY(0deg) translateZ(0px); transition: transform 0.55s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.3s;">
+      <a href="https://kodexwebsite.infinityfreeapp.com/" target="_blank" class="pjc-arrow" title="Voir KODEX"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></a>
+      <div class="pjc-vis" style="height:200px">
+        <div class="pjc-vis-bg pvb5"></div>
+        <div class="pjc-img-wrap"><div class="img-placeholder"><img src="kodex.png"></div></div>
+        <div class="pjc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg></div>
+      </div>
+      <div class="pjc-body">
+        <div class="pjc-type">Projet Personnel · Web</div>
+        <div class="pjc-name">KODEX</div>
+        <div class="pjc-desc">Projet personnel KODEX — plateforme web innovante concue et developpee independamment. Architecture solide, design sur-mesure et fonctionnalites metiers avancees.</div>
+        <div class="pjc-stack"><span class="stk">Full-Stack</span><span class="stk">PHP</span><span class="stk">MySQL</span><span class="stk">JavaScript</span></div>
+      </div>
+    </div>
+
+    <!-- 4. cvForge — App Web -->
+    <div class="pjc rv d2 in" data-pcat="app perso" style="transform: perspective(900px) rotateX(0deg) rotateY(0deg) translateZ(0px); transition: transform 0.55s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.3s;">
+      <a href="https://ferdycatservice.infinityfreeapp.com/" target="_blank" class="pjc-arrow" title="Voir cvForge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></a>
+      <div class="pjc-vis" style="height:200px">
+        <div class="pjc-vis-bg pvb6"></div>
+        <div class="pjc-img-wrap"><div class="img-placeholder"><img src="ferdicat.png"></div></div>
+        <div class="pjc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="4" y="2" width="16" height="20" rx="2"></rect><line x1="8" y1="7" x2="16" y2="7"></line><line x1="8" y1="11" x2="16" y2="11"></line><line x1="8" y1="15" x2="12" y2="15"></line></svg></div>
+      </div>
+      <div class="pjc-body">
+        <div class="pjc-type">Site web e-commerce</div>
+        <div class="pjc-name">FERDICAT SERVICES</div>
+        <div class="pjc-desc">Site web e-commerce de vente d'engins lourds.</div>
+        <div class="pjc-stack"><span class="stk o">Web App</span><span class="stk o">PDF Export</span><span class="stk o">JavaScript</span><span class="stk o">Templates</span></div>
+      </div>
+    </div>
+
+    
+
+    <!-- 6. AlloLok — En cours, badge orange clignotant, grille complète -->
+    <div class="pjc pg-full rv d1 in" data-pcat="mobile app" style="transform: perspective(900px) rotateX(0deg) rotateY(0deg) translateZ(0px); transition: transform 0.55s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.3s;">
+      <div class="pjc-wip-badge"><span class="wp-dot"></span><font _mstmutation="1">En cours · Projet confidentiel</font></div>
+      <div class="pjc-vis" style="height:240px">
+        <div class="pjc-vis-bg pvb3"></div>
+        
+        <!-- Effet mystere -->
+        <div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;z-index:3;">
+          <div style="font-family:var(--mono);font-size:.55rem;letter-spacing:.3em;color:var(--muted2);text-transform:uppercase;">Projet confidentiel</div>
+          <div style="font-weight:800;font-size:2rem;letter-spacing:.08em;background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">AlloLok</div>
+          <div style="font-family:var(--serif);font-style:italic;font-size:.85rem;color:var(--muted);max-width:320px;text-align:center;">Une application mobile en cours de developpement. Les details seront reveles a la sortie.</div>
+          <div style="display:flex;align-items:center;gap:8px;padding:8px 20px;border-radius:100px;background:rgba(245,158,11,.12);border:1px solid rgba(245,158,11,.3);font-family:var(--mono);font-size:.6rem;color:#fbbf24;letter-spacing:.1em;animation:wipPulse 2s ease-in-out infinite;">
+            <span style="width:7px;height:7px;border-radius:50%;background:#f59e0b;animation:dotBlink .8s ease-in-out infinite;flex-shrink:0;"></span><font _mstmutation="1">
+            DEVELOPPEMENT EN COURS
+          </font></div>
+        </div>
+        <div style="position:absolute;inset:0;background:rgba(4,8,15,.7);z-index:2;"></div>
+      </div>
+      <div class="pjc-body">
+        <div class="pjc-type">Application Mobile · Projet Phare</div>
+        <div class="pjc-name">AlloLok — ??? <span style="font-size:.75rem;font-weight:400;color:var(--muted);">· Details confidentiels</span></div>
+        <div class="pjc-desc">Projet mobile ambitieux en cours de developpement actif. Architecture robuste, interfaces modernes et integration API de bout en bout. Plus d'informations disponibles a la sortie officielle. <strong style="color:var(--text);">Restez connectes !</strong></div>
+        <div class="pjc-stack"><span class="stk">React Native</span><span class="stk">Expo</span><span class="stk">API REST</span><span class="stk">Android</span><span class="stk">iOS</span><span class="stk o">En cours</span></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="sec">
+  <div class="rv in" style="margin-bottom:64px">
+    <span class="slabel">Services</span>
+    <h2 class="stitle">Ce que je <em>propose</em></h2>
+    <p class="ssub">Des services complets pour accompagner votre entreprise dans sa croissance digitale.</p>
+  </div>
+  <div class="srvg">
+    <div class="srvc rv d1 in"><div class="srvc-n">01 -</div><div class="srvc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg></div><div class="srvc-name">Infrastructure Reseaux</div><div class="srvc-desc">Conception, deploiement et maintenance d'architectures reseaux LAN/WAN. Securisation, supervision et resolution de pannes IT.</div></div>
+    <div class="srvc rv d2 in"><div class="srvc-n">02 -</div><div class="srvc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg></div><div class="srvc-name">Developpement Web &amp; Mobile</div><div class="srvc-desc">Sites vitrines, e-commerce, applications mobiles iOS/Android. Stack complete : WordPress, PHP, JavaScript, React Native, MySQL.</div></div>
+    <div class="srvc rv d3 in"><div class="srvc-n">03 -</div><div class="srvc-ico g"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg></div><div class="srvc-name">Design Graphique &amp; Branding</div><div class="srvc-desc">Logos, chartes graphiques, affiches, visuels reseaux sociaux, UI/UX. Identite visuelle complete et coherente.</div></div>
+    <div class="srvc rv d1 in"><div class="srvc-n">04 -</div><div class="srvc-ico g"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 11l19-9-9 19-2-8-8-2z"></path></svg></div><div class="srvc-name">Social Media Management</div><div class="srvc-desc">Gestion de vos pages et comptes. Creation de contenu visuel, strategie editoriale, croissance de communaute et reporting.</div></div>
+    <div class="srvc rv d2 in" style="transform: perspective(900px) rotateX(0deg) rotateY(0deg) translateZ(0px); transition: transform 0.55s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.3s;"><div class="srvc-n">05 -</div><div class="srvc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg></div><div class="srvc-name">SEO &amp; Performance Web</div><div class="srvc-desc">Optimisation du referencement naturel, amelioration des performances, securite web et migration de sites existants.</div></div>
+    <div class="srvc rv d3 in" style="transform: perspective(900px) rotateX(0deg) rotateY(0deg) translateZ(0px); transition: transform 0.55s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.3s;"><div class="srvc-n">06 -</div><div class="srvc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"></path><path d="M12 15l-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"></path><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"></path><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path></svg></div><div class="srvc-name">Transformation Digitale</div><div class="srvc-desc">Accompagnement complet dans la digitalisation de votre entreprise. Audit, strategie, mise en place et formation des equipes.</div></div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials" class="sec sec-alt">
+  <div class="rv in" style="margin-bottom:64px">
+    <span class="slabel">Temoignages</span>
+    <h2 class="stitle">Ce que disent <em>mes clients</em></h2>
+    <p class="ssub">La satisfaction de mes clients est ma meilleure carte de visite.</p>
+  </div>
+  <div class="testg">
+    <div class="testc testc-wide rv in" style="transform: perspective(900px) rotateX(0deg) rotateY(0deg) translateZ(0px); transition: transform 0.55s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.3s;">
+      <div class="testc-quote">"</div>
+      <div class="testc-text">SAR a transforme notre presence digitale de A a Z. Il a concu notre logo, notre site web, gere nos reseaux sociaux et meme optimise notre reseau interne. Tout ca avec un seul interlocuteur, une coherence parfaite et un resultat vraiment professionnel. Rare de trouver un profil aussi complet.</div>
+      <div class="testc-stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div>
+      <div class="testc-person"><div class="testc-avatar">KD</div><div><div class="testc-name">Kofi Diabate</div><div class="testc-role">Directeur · Entreprise de commerce, Ouagadougou</div></div></div>
+    </div>
+    <div class="testc rv d1 in" style="transform: perspective(900px) rotateX(0deg) rotateY(0deg) translateZ(0px); transition: transform 0.55s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.3s;">
+      <div class="testc-quote">"</div>
+      <div class="testc-text">Notre application mobile est exactement ce qu'on voulait. SAR a su comprendre notre vision et la transformer en une app fluide, moderne et intuitive. Tres pro du debut a la fin.</div>
+      <div class="testc-stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div>
+      <div class="testc-person"><div class="testc-avatar">AS</div><div><div class="testc-name">Aminata Sawadogo</div><div class="testc-role">Fondatrice · Startup tech, Burkina Faso</div></div></div>
+    </div>
+    <div class="testc rv d2 in" style="transform: perspective(900px) rotateX(0deg) rotateY(0deg) translateZ(0px); transition: transform 0.55s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.3s;">
+      <div class="testc-quote">"</div>
+      <div class="testc-text">Identite visuelle, charte graphique et gestion Instagram - tout est nickel. Notre marque est maintenant reconnaissable et professionnelle. Je recommande les yeux fermes.</div>
+      <div class="testc-stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div>
+      <div class="testc-person"><div class="testc-avatar">MT</div><div><div class="testc-name">Moussa Traore</div><div class="testc-role">CEO · Agence evenementielle</div></div></div>
+    </div>
+    <div class="testc rv d3 in" style="transform: perspective(900px) rotateX(0deg) rotateY(0deg) translateZ(0px); transition: transform 0.55s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.3s;">
+      <div class="testc-quote">"</div>
+      <div class="testc-text">Notre reseau d'entreprise etait instable. SAR a tout diagnostique, restructure l'architecture et forme notre equipe. Depuis, zero panne. Competent et rigoureux.</div>
+      <div class="testc-stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div>
+      <div class="testc-person"><div class="testc-avatar">IB</div><div><div class="testc-name">Ibrahim Belem</div><div class="testc-role">DSI · PME, Ouagadougou</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA STRIP -->
+<div class="cta-strip rv in">
+  <div class="ctas-left">
+    <div class="ctas-title">Pret a lancer votre projet ?</div>
+    <div class="ctas-sub">Discutons de vos besoins. Devis gratuit sous 24h.</div>
+  </div>
+  <div class="ctas-right">
+    <a href="#contact" class="btnp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="16" height="16"><path d="M5 12h14M12 5l7 7-7 7"></path></svg><font _mstmutation="1">Demarrer un projet</font></a>
+    <a href="Abdoul_Rahim_SIMPORE_CV2026.pdf" download="" class="btno"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg><font _mstmutation="1">Telecharger CV</font></a>
+  </div>
+</div>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="contact-glow"></div>
+  <div class="contact-grid-bg"></div>
+  <div class="contact-top rv in">
+    <span class="slabel">Contact</span>
+    <h2 class="contact-headline">Contactez-moi<br><em>directement.</em></h2>
+    <p class="contact-sub">Besoin d'un devis, d'une collaboration ou juste d'un renseignement ? Choisissez le canal qui vous convient.</p>
+  </div>
+  <div class="contact-cards rv d1 in">
+    <a href="mailto:rahimgenious64@gmail.com" class="ccard ccard-email">
+      <div class="ccard-glow"></div>
+      <div class="ccard-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg></div>
+      <div class="ccard-label">Email</div>
+      <div class="ccard-val">rahimgenious64@gmail.com</div>
+      <div class="ccard-cta">Envoyer un email <span>↗</span></div>
+    </a>
+    <a href="tel:+22667319920" class="ccard ccard-phone">
+      <div class="ccard-glow"></div>
+      <div class="ccard-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.96a16 16 0 0 0 6.13 6.13l.95-.95a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.95 16.92z"></path></svg></div>
+      <div class="ccard-label">Telephone</div>
+      <div class="ccard-val">+226 67 31 99 20</div>
+      <div class="ccard-cta">Appeler maintenant <span>↗</span></div>
+    </a>
+    <a href="https://wa.me/22667319920" target="_blank" class="ccard ccard-wa">
+      <div class="ccard-glow"></div>
+      <div class="ccard-icon"><svg viewBox="0 0 24 24" fill="none"><rect width="24" height="24" rx="5" fill="#25d366"></rect><path d="M12 4a8 8 0 0 0-6.9 12L4 20l4.1-1.1A8 8 0 1 0 12 4zm3.6 9.6c-.2-.1-1.1-.5-1.3-.6-.2-.1-.3-.1-.4.1s-.5.6-.6.7c-.1.1-.2.1-.4 0s-.8-.3-1.5-.9-1-1.1-1.1-1.3c0-.2 0-.3.1-.4l.3-.4c.1-.1.1-.2.2-.3 0-.1 0-.3 0-.4-.1-.1-.4-1-.6-1.4-.1-.3-.3-.3-.4-.3h-.4a.7.7 0 0 0-.5.2c-.2.2-.7.7-.7 1.6s.7 1.8.8 2c.1.1 1.4 2.1 3.3 3 .5.2.8.3 1.1.4.5.1.9.1 1.2 0 .4-.1 1.1-.4 1.3-.9.2-.4.2-.8.1-1z" fill="white"></path></svg></div>
+      <div class="ccard-label">WhatsApp</div>
+      <div class="ccard-val">+226 67 31 99 20</div>
+      <div class="ccard-cta">Ecrire sur WhatsApp <span>↗</span></div>
+    </a>
+    <a href="https://www.facebook.com/rahim.simpore" target="_blank" class="ccard ccard-fb">
+      <div class="ccard-glow"></div>
+      <div class="ccard-icon"><svg viewBox="0 0 24 24" fill="none"><rect width="24" height="24" rx="5" fill="#1877f2"></rect><path d="M16 8h-2a1 1 0 0 0-1 1v2h3l-.5 3H13v7h-3v-7H8v-3h2V9a4 4 0 0 1 4-4h2v3z" fill="white"></path></svg></div>
+      <div class="ccard-label">Facebook</div>
+      <div class="ccard-val">Rahim SIMPORE</div>
+      <div class="ccard-cta">Voir le profil <span>↗</span></div>
+    </a>
+    <a href="https://linkedin.com/in/rahimsimpore" target="_blank" class="ccard ccard-li">
+      <div class="ccard-glow"></div>
+      <div class="ccard-icon"><svg viewBox="0 0 24 24" fill="none"><rect width="24" height="24" rx="4" fill="#0077b5"></rect><rect x="5" y="9" width="3" height="10" fill="white"></rect><circle cx="6.5" cy="6.5" r="1.5" fill="white"></circle><path d="M11 9h3v1.5s1-1.5 3-1.5c2.5 0 3 1.5 3 4V19h-3v-5c0-1.5-.5-2-1.5-2S14 13 14 14v5h-3V9z" fill="white"></path></svg></div>
+      <div class="ccard-label">LinkedIn</div>
+      <div class="ccard-val">Abdoul Rahim SIMPORE</div>
+      <div class="ccard-cta">Voir le profil <span>↗</span></div>
+    </a>
+    <div class="ccard ccard-avail">
+      <div class="ccard-avail-top">
+        <div class="ccard-label">Disponibilite</div>
+        <div class="cavail-badge"><span class="ldot" style="width:5px;height:5px;"></span><font _mstmutation="1">Disponible</font></div>
+      </div>
+      <div class="ccard-avail-list">
+        <div class="cavail-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg><font _mstmutation="1">Projets freelance</font></div>
+        <div class="cavail-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg><font _mstmutation="1">Consulting</font></div>
+        <div class="cavail-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg><font _mstmutation="1">Formation</font></div>
+        <div class="cavail-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg><font _mstmutation="1">Missions courtes</font></div>
+      </div>
+      <div class="ccard-note">Repons sous 24h · Devis gratuit</div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <div>
+      <div class="footer-logo-row">
+        <svg class="footer-logo-svg" viewBox="0 0 80 80" fill="none">
+          <polygon points="40,3 75,21 75,59 40,77 5,59 5,21" fill="none" stroke="url(#fg2)" stroke-width="1.8"></polygon>
+          <polygon points="40,13 65,27 65,53 40,67 15,53 15,27" fill="none" stroke="url(#fg2)" stroke-width="1" opacity=".3"></polygon>
+          <text x="40" y="47" text-anchor="middle" font-family="Bricolage Grotesque,sans-serif" font-weight="800" font-size="19" fill="url(#fg2)" letter-spacing="-0.5" _mstHash="449">SAR</text>
+          <defs><linearGradient id="fg2" x1="5" y1="3" x2="75" y2="77" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#3b82f6"></stop><stop offset="100%" stop-color="#10b981"></stop></linearGradient></defs>
+        </svg>
+        <span class="footer-logo-name">SIMPORE <span>Abdoul Rahim</span></span>
+      </div>
+      <p class="footer-tagline">Ingenieur reseaux, developpeur full-stack, graphiste et consultant digital. Un profil 360 pour votre transformation numerique.</p>
+      <div class="footer-socials">
+        <a href="https://linkedin.com/in/rahimsimpore" target="_blank" class="fsoc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a>
+        <a href="https://www.facebook.com/rahim.simpore" target="_blank" class="fsoc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a>
+        <a href="https://wa.me/22667319920" target="_blank" class="fsoc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg></a>
+        <a href="mailto:rahimgenious64@gmail.com" class="fsoc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg></a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title">Navigation</div>
+      <ul>
+        <li><a href="#about"><font _mstmutation="1">A propos</font><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></a></li>
+        <li><a href="#skills"><font _mstmutation="1">Competences</font><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></a></li>
+        <li><a href="#experience"><font _mstmutation="1">Experience</font><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></a></li>
+        <li><a href="#projects"><font _mstmutation="1">Projets</font><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></a></li>
+        <li><a href="#testimonials"><font _mstmutation="1">Temoignages</font><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title">Services</div>
+      <ul>
+        <li><a href="#services"><font _mstmutation="1">Infrastructure IT</font><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></a></li>
+        <li><a href="#services"><font _mstmutation="1">Dev Web &amp; Mobile</font><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></a></li>
+        <li><a href="#services"><font _mstmutation="1">Design &amp; Branding</font><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></a></li>
+        <li><a href="#services"><font _mstmutation="1">Social Media</font><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></a></li>
+        <li><a href="#services"><font _mstmutation="1">SEO &amp; Performance</font><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title">Contact rapide</div>
+      <ul>
+        <li><a href="mailto:rahimgenious64@gmail.com">rahimgenious64@gmail.com</a></li>
+        <li><a href="tel:+22667319920"><font _mstmutation="1">+226 67 31 99 20</font><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></a></li>
+        <li><a href="https://linkedin.com/in/rahimsimpore" target="_blank"><font _mstmutation="1">LinkedIn</font><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></a></li>
+        <li><a href="Abdoul_Rahim_SIMPORE_CV2026.pdf" download=""><font _mstmutation="1">Telecharger le CV</font><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-copy">© 2025 SIMPORE Abdoul Rahim · Ouagadougou, Burkina Faso</div>
+    <div class="footer-badge"><font _mstmutation="1">Concu avec </font><span>passion</span><font _mstmutation="1"> &amp; expertise par </font><span>Abdoul Rahim SIMPORE</span></div>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body></html>
