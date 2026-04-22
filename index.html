@@ -9,7 +9,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300;12..96,400;12..96,500;12..96,700;12..96,800&family=Instrument+Serif:ital@0;1&family=Fira+Code:wght@300;400;500&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="theme-lang.css"> 
 </head>
+
 <body class="">
 
 <!-- LOADER -->
@@ -34,7 +36,7 @@
     <svg class="nl-svg" viewBox="0 0 80 80" fill="none">
       <polygon points="40,3 75,21 75,59 40,77 5,59 5,21" fill="none" stroke="url(#ng)" stroke-width="1.8"></polygon>
       <polygon points="40,13 65,27 65,53 40,67 15,53 15,27" fill="none" stroke="url(#ng)" stroke-width="1" opacity=".3"></polygon>
-      <text x="40" y="47" text-anchor="middle" font-family="Bricolage Grotesque,sans-serif" font-weight="800" font-size="19" fill="url(#ng)" letter-spacing="-0.5" _mstHash="3">ISPT</text>
+      <text x="40" y="47" text-anchor="middle" font-family="Bricolage Grotesque,sans-serif" font-weight="800" font-size="19" fill="url(#ng)" letter-spacing="-0.5">ISPT</text>
       <defs><linearGradient id="ng" x1="5" y1="3" x2="75" y2="77" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#3b82f6"></stop><stop offset="100%" stop-color="#10b981"></stop></linearGradient></defs>
     </svg>
     <span class="nl-text">ILBOUDO <span>Sibri Pendwendé Toussaint</span></span>
@@ -48,14 +50,14 @@
     <li><a href="#tools" class="">Outils</a></li>
     <li><a href="#projects" class="">Projets</a></li>
     <li><a href="#services" class="">Services</a></li>
-    <li><a href="#testimonials" class="">Avis</a></li>
+    <!-- <li><a href="#testimonials" class="">Avis</a></li> -->
     <li><a href="#contact" class="">Contact</a></li>
   </ul>
   <a href="assets/CV_ILBOUDO_SP_Toussaint.pdf" download="CV_ILBOUDO_SP_Toussaint.pdf" class="ncv">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
     Telecharger CV
   </a>
-  <button class="hamburger" id="hamburger" aria-label="Menu" _mstaria-label="45591">
+  <button class="hamburger" id="hamburger" aria-label="Menu">
     <span></span><span></span><span></span>
   </button>
 </nav>
@@ -71,7 +73,7 @@
     <li><a href="#tools" onclick="closeMobileNav()">Outils</a></li>
     <li><a href="#projects" onclick="closeMobileNav()">Projets</a></li>
     <li><a href="#services" onclick="closeMobileNav()">Services</a></li>
-    <li><a href="#testimonials" onclick="closeMobileNav()">Avis</a></li>
+    <!-- <li><a href="#testimonials" onclick="closeMobileNav()">Avis</a></li> -->
     <li><a href="#contact" onclick="closeMobileNav()">Contact</a></li>
   </ul>
   <a href="assets/CV_ILBOUDO_SP_Toussaint.pdf" download="CV_ILBOUDO_SP_Toussaint.pdf" class="ncv">
@@ -96,14 +98,14 @@
     <div class="hbtns">
       <a href="#projects" class="btnp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"></path></svg>Voir mes projets</a>
       <a href="assets/CV_ILBOUDO_SP_Toussaint.pdf" download="CV_ILBOUDO_SP_Toussaint.pdf" class="btno"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>Telecharger CV</a>
-      <a href="#contact" class="btno"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg><font _mstmutation="1">Contact</font></a>
+      <a href="#contact" class="btno"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>Contact</a>
     </div>
   </div>
   <div class="hright">
     <div class="pcard" id="pcard" style="transform: none; transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.5s;">
-      <div class="fbadge fb1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg><font _mstmutation="1">Developpement Web</font></div>
-      <div class="fbadge fb2"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg><font _mstmutation="1">Developpement Mobile</font></div>
-      <div class="fbadge fb3"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="2" width="14" height="20" rx="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg><font _mstmutation="1">Formateur</font></div>
+      <div class="fbadge fb1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>Developpement Web</div>
+      <div class="fbadge fb2"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg>Developpement Mobile</div>
+      <div class="fbadge fb3"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="2" width="14" height="20" rx="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>Formateur</div>
       <div class="pphoto">
         <div class="pphoto-glow"></div>
         <div class="porbit1"></div><div class="porbit2"></div>
@@ -119,7 +121,7 @@
       </div>
       <div class="pfoot">
         <div><div class="pf-name">ILBOUDO Sibri Pendwendé Toussaint</div><div class="pf-role">Développeur Web & Mobile</div></div>
-        <div class="pf-loc"><span class="ldot"></span><font _mstmutation="1">Ouagadougou, BF</font></div>
+        <div class="pf-loc"><span class="ldot"></span>Ouagadougou, BF</div>
       </div>
     </div>
   </div>
@@ -127,13 +129,13 @@
 
 <!-- MARQUEE -->
 <div class="marquee"><div class="mtrack">
-  <span class="mitem"><font _mstmutation="1">Developpement Web Full-Stack</font><span class="msep"></span></span>
-  <span class="mitem"><font _mstmutation="1">Developpement Laravel</font><span class="msep"></span></span>
-  <span class="mitem"><font _mstmutation="1">Developpement React</font><span class="msep"></span></span>
-  <span class="mitem"><font _mstmutation="1">Developpement Node</font><span class="msep"></span></span>
-  <span class="mitem"><font _mstmutation="1">Developpement Applications Mobiles</font><span class="msep"></span></span>
-  <span class="mitem"><font _mstmutation="1">Application Mobile Flutter</font><span class="msep"></span></span>
-  <span class="mitem"><font _mstmutation="1">Formateur metiers du Numerique : Bureautique - Developpement Web </font><span class="msep"></span></span>
+  <span class="mitem">Developpement Web Full-Stack<span class="msep"></span></span>
+  <span class="mitem">Developpement Laravel<span class="msep"></span></span>
+  <span class="mitem">Developpement React<span class="msep"></span></span>
+  <span class="mitem">Developpement Node<span class="msep"></span></span>
+  <span class="mitem">Developpement Applications Mobiles<span class="msep"></span></span>
+  <span class="mitem">Application Mobile Flutter<span class="msep"></span></span>
+  <span class="mitem">Formateur metiers du Numerique : Bureautique - Developpement Web <span class="msep"></span></span>
 </div></div>
 
 <!-- ABOUT -->
@@ -184,11 +186,18 @@
   <div class="rv d2 in">
     <div class="alist">
       <div class="air"><span class="air-l">Nom complet</span><span class="air-v">ILBOUDO Sibri Pendwendé Toussaint</span></div>
-      <div class="air"><span class="air-l">Formations</span><span class="air-v"> Licence en Génie Logiciel</span><span class="air-v">Licence en Electronique et Automatismes Industriels</span><span class="air-v"> BTS en Electronique et Informatique Industrielle</span></div>
+      <div class="air">
+        <span class="air-l">Formations</span>
+        <span class="air-v">
+          Licence en Génie Logiciel <br>
+          Licence en Électronique et Automatismes Industriels <br>
+          BTS en Électronique et Informatique Industrielle
+        </span>
+      </div>
       <div class="air"><span class="air-l">Localisation</span><span class="air-v">Ouagadougou, Burkina Faso</span></div>
-      <div class="air"><span class="air-l">Reseaux sociaux</span><span class="air-v">Facebook · LinkedIn · WhatsApp</span></div>
-      <div class="air"><span class="air-l">Langues</span><span class="air-v">Francais · Anglais - Mooré (Langue maternelle)</span></div>
-      <div class="air"><span class="air-l">Statut</span><span class="air-v gr"><span class="status-dot-inline"></span><font _mstmutation="1"> Disponible</font></span></div>
+      <div class="air"><span class="air-l">Réseaux sociaux</span><span class="air-v">Facebook · LinkedIn · WhatsApp</span></div>
+      <div class="air"><span class="air-l">Langues</span><span class="air-v">Français · Anglais · Mooré (langue maternelle)</span></div>
+      <div class="air"><span class="air-l">Statut</span><span class="air-v gr"><span class="status-dot-inline"></span> Disponible</span></div>
     </div>
   </div>
 </section>
@@ -899,7 +908,7 @@
 
     <!-- 1. Mon Portfolio — badge clignotant bleu -->
     <div class="pjc rv d1 in" data-pcat="web perso" style="transform: perspective(900px) rotateX(0deg) rotateY(0deg) translateZ(0px); transition: transform 0.55s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.3s;">
-      <div class="pjc-portfolio-badge"><span class="bp-dot"></span><font _mstmutation="1">Coded by me</font></div>
+      <div class="pjc-portfolio-badge"><span class="bp-dot"></span>Coded by me</div>
       <a href="https://toussaint-ilboudo.github.io/portfolio/" class="pjc-arrow" title="Ce site" onclick="return false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></a>
       <div class="pjc-vis" style="height:200px">
         <div class="pjc-vis-bg pvb1"></div>
@@ -979,7 +988,7 @@
 
     <!-- 6. AlloLok — En cours, badge orange clignotant, grille complète -->
     <!-- <div class="pjc pg-full rv d1 in" data-pcat="mobile app" style="transform: perspective(900px) rotateX(0deg) rotateY(0deg) translateZ(0px); transition: transform 0.55s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.3s;">
-      <div class="pjc-wip-badge"><span class="wp-dot"></span><font _mstmutation="1">En cours · Projet confidentiel</font></div>
+      <div class="pjc-wip-badge"><span class="wp-dot"></span>En cours · Projet confidentiel</div>
       <div class="pjc-vis" style="height:240px">
         <div class="pjc-vis-bg pvb3"></div>
         
@@ -1064,8 +1073,8 @@
     <div class="ctas-sub">Discutons de vos besoins. Devis gratuit sous 24h.</div>
   </div>
   <div class="ctas-right">
-    <a href="#contact" class="btnp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="16" height="16"><path d="M5 12h14M12 5l7 7-7 7"></path></svg><font _mstmutation="1">Demarrer un projet</font></a>
-    <a href="assets/CV_ILBOUDO_SP_Toussaint.pdf" download="CV_ILBOUDO_SP_Toussaint.pdf" class="btno"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg><font _mstmutation="1">Telecharger CV</font></a>
+    <a href="#contact" class="btnp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="16" height="16"><path d="M5 12h14M12 5l7 7-7 7"></path></svg>Demarrer un projet</a>
+    <a href="assets/CV_ILBOUDO_SP_Toussaint.pdf" download="CV_ILBOUDO_SP_Toussaint.pdf" class="btno"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>Telecharger CV</a>
   </div>
 </div>
 
@@ -1117,13 +1126,13 @@
     <div class="ccard ccard-avail">
       <div class="ccard-avail-top">
         <div class="ccard-label">Disponibilite</div>
-        <div class="cavail-badge"><span class="ldot" style="width:5px;height:5px;"></span><font _mstmutation="1">Disponible</font></div>
+        <div class="cavail-badge"><span class="ldot" style="width:5px;height:5px;"></span>Disponible</div>
       </div>
       <div class="ccard-avail-list">
-        <div class="cavail-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg><font _mstmutation="1">Projets freelance</font></div>
-        <div class="cavail-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg><font _mstmutation="1">Consulting</font></div>
-        <div class="cavail-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg><font _mstmutation="1">Formation</font></div>
-        <div class="cavail-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg><font _mstmutation="1">Missions courtes</font></div>
+        <div class="cavail-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>Projets freelance</div>
+        <div class="cavail-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>Consulting</div>
+        <div class="cavail-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>Formation</div>
+        <div class="cavail-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>Missions courtes</div>
       </div>
       <div class="ccard-note">Réponse sous 24h · Devis gratuit</div>
     </div>
@@ -1138,7 +1147,7 @@
         <svg class="footer-logo-svg" viewBox="0 0 80 80" fill="none">
           <polygon points="40,3 75,21 75,59 40,77 5,59 5,21" fill="none" stroke="url(#fg2)" stroke-width="1.8"></polygon>
           <polygon points="40,13 65,27 65,53 40,67 15,53 15,27" fill="none" stroke="url(#fg2)" stroke-width="1" opacity=".3"></polygon>
-          <text x="40" y="47" text-anchor="middle" font-family="Bricolage Grotesque,sans-serif" font-weight="800" font-size="19" fill="url(#fg2)" letter-spacing="-0.5" _mstHash="449">ISPT</text>
+          <text x="40" y="47" text-anchor="middle" font-family="Bricolage Grotesque,sans-serif" font-weight="800" font-size="19" fill="url(#fg2)" letter-spacing="-0.5">ISPT</text>
           <defs><linearGradient id="fg2" x1="5" y1="3" x2="75" y2="77" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#3b82f6"></stop><stop offset="100%" stop-color="#10b981"></stop></linearGradient></defs>
         </svg>
         <span class="footer-logo-name">ILBOUDO <span>Sibri Pendwendé Toussaint</span></span>
@@ -1155,27 +1164,27 @@
     <div class="footer-col">
       <div class="footer-col-title">Navigation</div>
       <ul>
-        <li><a href="#about"><font _mstmutation="1">A propos</font><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></a></li>
-        <li><a href="#skills"><font _mstmutation="1">Competences</font><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></a></li>
-        <li><a href="#experience"><font _mstmutation="1">Experience</font><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></a></li>
-        <li><a href="#projects"><font _mstmutation="1">Projets</font><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></a></li>
-        <li><a href="#testimonials"><font _mstmutation="1">Temoignages</font><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></a></li>
+        <li><a href="#about">A propos<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></a></li>
+        <li><a href="#skills">Competences<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></a></li>
+        <li><a href="#experience">Experience<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></a></li>
+        <li><a href="#projects">Projets<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></a></li>
+        <li><a href="#testimonials">Temoignages<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></a></li>
       </ul>
     </div>
     <div class="footer-col">
       <div class="footer-col-title">Services</div>
       <ul>
-        <li><a href="#services"><font _mstmutation="1">Dévéloppement Web Full Stack</font><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></a></li>
-        <li><a href="#services"><font _mstmutation="1">Développement Mobile</font><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></a></li>
-        <li><a href="#services"><font _mstmutation="1">Conception de Sites Web - ecommerce</font><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></a></li>
-        <li><a href="#services"><font _mstmutation="1">Formations aux Metiers du Numérique</font><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></a></li>
+        <li><a href="#services">Dévéloppement Web Full Stack<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></a></li>
+        <li><a href="#services">Développement Mobile<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></a></li>
+        <li><a href="#services">Conception de Sites Web - ecommerce<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></a></li>
+        <li><a href="#services">Formations aux Metiers du Numérique<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></a></li>
       </ul>
     </div>
     <div class="footer-col">
       <div class="footer-col-title">Contact rapide</div>
       <ul>
         <li><a href="mailto:toussaintilboudo05@gmail.com">toussaintilboudo05@gmail.com</a></li>
-        <li><a href="tel:+22672417822"><font _mstmutation="1">+226 72 41 78 22</font><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></a></li>
+        <li><a href="tel:+22672417822">+226 72 41 78 22<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></a></li>
         <li><a href="https://www.linkedin.com/in/ilboudotoussaint/" target="_blank"><font _mstmutation="1">LinkedIn</font><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></a></li>
         <li><a href="assets/CV_ILBOUDO_SP_Toussaint.pdf" download=""><font _mstmutation="1">Telecharger le CV</font><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></a></li>
       </ul>
@@ -1186,5 +1195,6 @@
     <div class="footer-badge"><font _mstmutation="1">Concu avec </font><span>passion</span><font _mstmutation="1"> &amp; expertise par </font><span>Sibri Pendwendé Toussaint ILBOUDO</span></div>
   </div>
 </footer>
+<script src="i18n.js"></script>
 <script src="script.js"></script>
 </body></html>
